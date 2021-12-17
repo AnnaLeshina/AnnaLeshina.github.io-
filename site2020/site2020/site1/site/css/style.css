@@ -1,0 +1,247 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Georgia", serif;
+}
+h1, h3, h2, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #250b25;}
+
+header{
+    background-color: #dfd2f5;
+    color: #29082c;}  /*Цвет шрифта и фона меню*/
+.header_wrapper{
+    display:flex;/*Делает все элементы в блоке "резиновыми" блочными элементами*/
+    flex-wrap: wrap; /*Блоки переносятся*/
+    align-items: flex-end;/*Элементы выстраиваются от конца перпендикулярной оси*/
+    justify-content: space-between;} /*Выравнивание по главной оси,распределение свободного места между собой*/
+.header_nav{
+    display: flex;
+    flex-wrap: wrap;/*Блоки переносятся*/
+    height:100px;/* высота блока */
+    align-items: center;/* элементы выстраиваются по центру */
+    justify-content: center;/* элементы выстраиваются по центру главной оси */}
+.header_logo{
+    display: flex;
+    flex-wrap: wrap;/*Блоки переносятся*/
+    flex-basis: 10%;/*размер flex-элемента по главной оси*/
+    height:100px;/* высота блока */
+    align-items: center; /* элементы выстраиваются по центру */
+    justify-content: center;/* элементы выстраиваются по центру главной оси */
+   }
+.header_menu{
+    display: flex;
+    flex-wrap: wrap;}
+.header_item{
+    margin-right: 30px; /*Определяет пространство снаружи элемента справа*/
+    border-width: 2px; /*Определяет толщину границы*/
+    border-left-style: solid; /*полоса слева от названий пунктов меню*/
+    padding-left:20px;  /*Определяет пространство внутри элемента слева*/
+    padding-right: 20px;
+    list-style-type: none;} /*Маркер не отображается*/
+.header_item_last{/*Последний элемент меню JS*/
+       text-decoration: none;/*Удаление линий, текст без подчеркивания*/
+       list-style-type: none;
+        margin-right: 15px;
+        border-width: 2px;
+        border-left-style: solid;
+        padding-left:20px;
+        padding-right: 15px;} 
+.header_preview{ /*Оглавление */
+   font-size: 140%;
+   text-align: center;
+   background-image: linear-gradient(to right bottom,#f2f2f2,#eccfda,#f2c7f3,#d5c0ee , #7a9dbe, #b0bbd4, #e5dfe4, #f2f2f2); /*создаем фон с помощью градиента*/
+   height: 250px;
+   background-repeat: no-repeat; /*Устанавливает одно фоновое изображение в элементе без его повторений*/
+   background-position: left;/*позиция фона слева*/
+   background-attachment: fixed; /*позиция фона неподвижна*/
+   background-size: cover; /*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока*/
+   padding-left: 650px;
+   padding-top: 120px;
+}
+.a_underline {
+    text-decoration: none;
+    color: #260b2e;
+    cursor:progress;
+	line-height: 1; /*задаём высоту строки*/
+    position: relative;}
+.a_underline:after {
+        display: block;
+        position: absolute;
+        left: 0; /* задаст направление подчёркивания */
+        width: 0;/*задаст длинну линии до наведения курсора*/
+        height: 2px; /*задаст ширину линии*/
+        background-color: #49172f; /*задаст цвет линии*/
+        content: "";
+        transition: width 0.5s ease-out; /*задаст время анимации*/
+    }
+.a_underline:hover:after,
+.a_underline:focus:after {
+        width: 100%; /*устанавливаем значение 100% для того, чтобы ссылка подчёркивалась полностью*/
+    }    
+    
+body{
+
+    --background-color: #270b0b;
+    --text-color: rgb(218, 166, 212);
+}
+section{
+    padding: 20px;
+}
+.polosa {background-color: #c4c6e9;}
+
+footer{
+
+    background-image: linear-gradient(to left bottom, #7a9dbe, #b0bbd4, #e5dfe4, #f2f2f2);
+    color: #F2F2F2;
+}
+.footer_wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    height:100px;/* высота блока */
+    align-items: center;}
+.footer_ico{
+    margin-right: 30px;
+    border-width: 5px;}
+.footer_all_icons{
+    margin-left: 30px;
+}
+.footer_text{
+    margin-right: 30px;
+    color: rgba(15, 6, 6, 0.849);
+}
+.html_cards{display: grid;grid-template-columns: repeat(3,1fr);}
+.cards{
+    grid-column: span 1;
+    margin-top: 15px;}
+.spiski{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); }
+.one_spisok
+{grid-column: span 1;
+margin: 50px;}
+.noselect{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    justify-items:center; 
+    align-items:center;
+}
+.item{
+    grid-column: span 1;
+    margin-bottom: 20x;
+    margin-right: 20px;
+    border-width: 2px;
+    border-left-style: solid;
+    padding-left:20px;
+    padding-right: 20px;
+    border-width: 2px;
+    text-align: center;
+  
+}
+h3{
+    margin-top: 1px;
+}
+h2{
+    margin-bottom: 10px;
+}
+button{
+    margin-top: 20px;
+}
+.header_nav{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.one{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #471147;
+}
+.spiski{
+    background-color: #dce2f0;
+}
+.items{
+    background-image: linear-gradient(to left bottom, #7a9dbe, #b0bbd4, #e5dfe4, #f2f2f2);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center; 
+}
+.wrapper_for_cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center; 
+}
+.items{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-bottom:  2px solid #260F01;
+    border-top:  2px solid #260F01;
+    border-left:  2px solid #260F01;
+    border-right:  2px solid #260F01;
+    border-radius: 7%;
+    padding: 65px;
+    grid-column: span 1;
+    margin: 30px;
+    font-size:medium;}
+    .items{
+        background-color:#d4cbcb ;
+    }
+
+    h3{
+        margin-bottom: 9px;
+    }
+    .h3_tel{
+        margin-bottom: 9px;
+    }
+    .contact_icons{
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    }
+    .item1{
+        padding-left: 1px;  
+    }
+    body{
+        font-family: 'Alegoreya Sans SC';
+        font-style: normal;
+        font-size: 18px;
+        line-height: normal;
+        font-weight: normal;
+        --background-color: rgb(255, 255, 255);
+        --text-color: black;
+    }
+    main{
+        background: var(--background-color);
+        color: var(--text-color);
+    }
+    :root{
+        --dark-background-color: rgb(71, 21, 73);
+        --dark-text-color:white;
+    }
+    body.theme-dark{
+        --background-color: var(--dark-background-color);
+        --text-color:var(--dark-text-color);
+    }
+    @media (prefers-color-scheme: dark) {
+        body.theme-auto{
+            --background-color: var(--dark-background-color);
+            --text-color:var(--dark-text-color);
+        }
+    }
+   
